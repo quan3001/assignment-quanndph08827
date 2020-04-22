@@ -1,0 +1,19 @@
+<section class="services py-5" id="services">
+	<div class="container py-md-5 py-3">
+	  <h5 class="heading mb-2">Shoes Store</h5>
+		<h3 class="heading  mb-5">All Product</h3>
+    
+    <div class="feature-grids row">
+      
+			<div class="col-lg-4 col-md-6 col-sm-6 mb-5" *ngFor="let product of products">
+				<div class="bottom-gd">
+					<a href="#"><img class="card-img-top" alt="" src={{product.image}}></a>
+					<h3 class="mt-4">{{product.name}}</h3>
+					<p class="mt-2">{{product.price}}$</p>
+				</div>
+        <button class="btn btn-primary">Add To Cart</button>
+			</div>
+			</div>
+		
+	</div>
+</section>

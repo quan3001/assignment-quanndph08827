@@ -1,0 +1,16 @@
+<div class="row" *ngIf = "product">
+	<div class="col-lg-0 col-md-20 mb-0">
+		<div class="card h-100" >
+			<a href="#"><img class="card-img-top" alt="" ></a>
+				<div class="card-body" >
+          <img width="250px" height="230px" class="img ml-2" alt="" src={{product.image}}>
+          <br>
+          <br>
+          <h5>Id: {{product.id}}</h5>
+					<h5>Name: {{product.name}}</h5>
+					<h5>Price: {{product.price}}</h5>
+				</div>
+		</div>
+	</div>
+
+	<div>
